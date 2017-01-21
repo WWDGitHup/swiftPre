@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,42 +16,12 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchImage-800-667h750_1334@2x-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kxm-6L-pMu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="667" id="Dot-Pb-YRJ"/>
-                                    <constraint firstAttribute="width" constant="375" id="xk2-ne-iIb"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Kxm-6L-pMu" secondAttribute="bottom" id="AxP-7u-ayA"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Eab-jK-xTt"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JSn-5P-Nwm"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MBq-Kl-TYd"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RH4-dN-Wlk"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UMd-Xe-LNb"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="V0K-KI-2FD"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Kxm-6L-pMu" secondAttribute="bottom" id="WQW-4c-pEY"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="WtT-I7-C6l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kxm-6L-pMu" secondAttribute="trailing" id="coM-Rl-a8A"/>
-                            <constraint firstItem="Kxm-6L-pMu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="fJv-7b-NuC"/>
-                            <constraint firstAttribute="trailing" secondItem="Kxm-6L-pMu" secondAttribute="trailing" id="k4e-7u-08E"/>
-                            <constraint firstAttribute="trailing" secondItem="Kxm-6L-pMu" secondAttribute="trailing" id="klS-l3-YXV"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Kxm-6L-pMu" secondAttribute="bottom" id="ls5-r4-ChS"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Kxm-6L-pMu" secondAttribute="bottom" id="poj-sv-ict"/>
-                            <constraint firstAttribute="trailing" secondItem="Kxm-6L-pMu" secondAttribute="trailing" id="tEm-Nh-jnp"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LaunchImage-800-667h750_1334@2x-1" width="16" height="16"/>
-    </resources>
 </document>
