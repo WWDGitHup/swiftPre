@@ -8,7 +8,7 @@
 
 import UIKit
 import StreamingKit
-
+import MediaPlayer
 class SongPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
 
     fileprivate var backButton:UIButton = UIButton()
@@ -31,6 +31,16 @@ class SongPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //这句话要添加在audioPlayer.play()之前
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            
+        }
+        //为了在锁屏界面显示信息，及控制面板
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        
         setupUI()
         
         self.loadData()
@@ -72,7 +82,6 @@ class SongPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
         sliderView.value = Float(seekTime)
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -302,5 +311,24 @@ class SongPlayerViewController: UIViewController,UIGestureRecognizerDelegate {
     }
     
     
+    
+    override func remoteControlReceived(with event: UIEvent?) {
+        switch event!.subtype {
+        case .remoteControlPlay:  // play按钮
+            AudioModel.sharedInstanced.resumePlayer()
+        case .remoteControlPause:  // pause按钮
+            AudioModel.sharedInstanced.pauseAudio()
+        case .remoteControlNextTrack:  // next
+            // ▶▶
+            AudioModel.sharedInstanced.nextAudio()
+            break
+        case .remoteControlPreviousTrack:  // previous
+            // ◀◀
+            AudioModel.sharedInstanced.previousAudio()
+            break
+        default:
+            break
+        }
+    }
     
 }

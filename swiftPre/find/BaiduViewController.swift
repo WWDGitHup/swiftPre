@@ -21,7 +21,6 @@ class BaiduViewController: BaseFindViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("gagagaggagag")
     }
 
     override func didReceiveMemoryWarning() {

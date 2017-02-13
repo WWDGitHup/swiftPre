@@ -63,7 +63,6 @@ extension CommonThreeCell{
             
             let index = indexPath.row % 3
             
-            print(self.frame.size.width)
             
             switch index {
             case 0:

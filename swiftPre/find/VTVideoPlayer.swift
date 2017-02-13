@@ -24,7 +24,6 @@ class VTVideoPlayer: UIView {
     var showView:UIView?
     var showFrame:CGRect?
     
-    
     fileprivate var isCanPlay:Bool = false
     init(frame: CGRect,videoUrl:String) {
         super.init(frame: frame)
@@ -199,7 +198,6 @@ extension VTVideoPlayer{
     func reLayoutViewUI(across:Bool) {
         vtPlayerLayer?.frame = self.bounds
         if across{
-            print(self.center.x)
             playButton.frame = CGRect.init(x: (self.frame.size.width - 50) / 2, y: (self.frame.size.height - 50) / 2, width:50, height: 50)
             playButton.backgroundColor = UIColor.purple
             controlView.frame = CGRect.init(x: 0, y: self.frame.size.height - 40, width: self.frame.size.width, height: 40)
@@ -295,7 +293,6 @@ extension VTVideoPlayer{
             //播放完成
             self.videoTimer = nil
         }
-        print(value)
     }
     
     //MARK:  UISlider 状态改变

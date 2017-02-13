@@ -9,10 +9,32 @@
 /* Begin PBXBuildFile section */
 		181FDA781E262243006D1C57 /* playerview_progresspoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 181FDA771E262243006D1C57 /* playerview_progresspoint.png */; };
 		1822368F1E235C5900F61E67 /* LiveProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822368E1E235C5900F61E67 /* LiveProgramCell.swift */; };
+		186F03641E456E95000B8760 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03631E456E95000B8760 /* IJKMediaFramework.framework */; };
+		186F03661E456EC7000B8760 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03651E456EC7000B8760 /* AudioToolbox.framework */; };
+		186F03681E456ECF000B8760 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03671E456ECF000B8760 /* AVFoundation.framework */; };
+		186F036A1E456EDA000B8760 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03691E456EDA000B8760 /* CoreGraphics.framework */; };
+		186F036C1E456EE3000B8760 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F036B1E456EE3000B8760 /* CoreMedia.framework */; };
+		186F036E1E456EEB000B8760 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F036D1E456EEB000B8760 /* CoreVideo.framework */; };
+		186F03701E456EF7000B8760 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F036F1E456EF7000B8760 /* libbz2.tbd */; };
+		186F03721E456EFF000B8760 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03711E456EFF000B8760 /* libz.tbd */; };
+		186F03741E456F11000B8760 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03731E456F11000B8760 /* MediaPlayer.framework */; };
+		186F03761E456F1B000B8760 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03751E456F1B000B8760 /* MobileCoreServices.framework */; };
+		186F03781E456F25000B8760 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03771E456F25000B8760 /* OpenGLES.framework */; };
+		186F037A1E456F2E000B8760 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F03791E456F2E000B8760 /* QuartzCore.framework */; };
+		186F037C1E456F39000B8760 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F037B1E456F39000B8760 /* UIKit.framework */; };
+		186F037E1E456F45000B8760 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186F037D1E456F45000B8760 /* VideoToolbox.framework */; };
+		186F03801E456FA1000B8760 /* LivePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F037F1E456FA1000B8760 /* LivePlayerView.swift */; };
+		188FF9E11E372506008A3B9A /* VideoLiveInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF9E01E372506008A3B9A /* VideoLiveInfo.swift */; };
+		188FF9E31E3726E0008A3B9A /* LiveListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF9E21E3726E0008A3B9A /* LiveListInfo.swift */; };
+		188FF9E51E372DC4008A3B9A /* LivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF9E41E372DC4008A3B9A /* LivePlayerViewController.swift */; };
+		188FF9E81E375113008A3B9A /* talk_close_40x40_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188FF9E61E375112008A3B9A /* talk_close_40x40_@2x.png */; };
+		188FF9E91E375113008A3B9A /* talk_close_40x40_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188FF9E71E375112008A3B9A /* talk_close_40x40_@3x.png */; };
 		18A451C31E247F8900FFE4C3 /* RadioUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A451C21E247F8900FFE4C3 /* RadioUserInfo.swift */; };
 		18A451C51E24807900FFE4C3 /* SectionDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A451C41E24807900FFE4C3 /* SectionDetailsModel.swift */; };
 		18A451C71E24816800FFE4C3 /* RadioListDeatil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A451C61E24816800FFE4C3 /* RadioListDeatil.swift */; };
 		18A451C91E24826200FFE4C3 /* RadioDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A451C81E24826200FFE4C3 /* RadioDetailData.swift */; };
+		18AD4C511E35E8C3003F73B3 /* MiaoShowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD4C501E35E8C3003F73B3 /* MiaoShowRequest.swift */; };
+		18AD4C531E35F451003F73B3 /* MiaoShowHotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD4C521E35F451003F73B3 /* MiaoShowHotTableViewCell.swift */; };
 		18B03B431E1C8B0B00BACA9B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B03B421E1C8B0B00BACA9B /* UserTableViewCell.swift */; };
 		18B03B471E1C8E9600BACA9B /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B03B461E1C8E9600BACA9B /* MineModel.swift */; };
 		18B03B491E1C911300BACA9B /* Events_Comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B03B481E1C911300BACA9B /* Events_Comment.png */; };
@@ -189,10 +211,32 @@
 /* Begin PBXFileReference section */
 		181FDA771E262243006D1C57 /* playerview_progresspoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerview_progresspoint.png; sourceTree = "<group>"; };
 		1822368E1E235C5900F61E67 /* LiveProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveProgramCell.swift; sourceTree = "<group>"; };
+		186F03631E456E95000B8760 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		186F03651E456EC7000B8760 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		186F03671E456ECF000B8760 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		186F03691E456EDA000B8760 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		186F036B1E456EE3000B8760 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		186F036D1E456EEB000B8760 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		186F036F1E456EF7000B8760 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		186F03711E456EFF000B8760 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		186F03731E456F11000B8760 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		186F03751E456F1B000B8760 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		186F03771E456F25000B8760 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		186F03791E456F2E000B8760 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		186F037B1E456F39000B8760 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		186F037D1E456F45000B8760 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		186F037F1E456FA1000B8760 /* LivePlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerView.swift; sourceTree = "<group>"; };
+		188FF9E01E372506008A3B9A /* VideoLiveInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLiveInfo.swift; sourceTree = "<group>"; };
+		188FF9E21E3726E0008A3B9A /* LiveListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListInfo.swift; sourceTree = "<group>"; };
+		188FF9E41E372DC4008A3B9A /* LivePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerViewController.swift; sourceTree = "<group>"; };
+		188FF9E61E375112008A3B9A /* talk_close_40x40_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_close_40x40_@2x.png"; sourceTree = "<group>"; };
+		188FF9E71E375112008A3B9A /* talk_close_40x40_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_close_40x40_@3x.png"; sourceTree = "<group>"; };
 		18A451C21E247F8900FFE4C3 /* RadioUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioUserInfo.swift; sourceTree = "<group>"; };
 		18A451C41E24807900FFE4C3 /* SectionDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDetailsModel.swift; sourceTree = "<group>"; };
 		18A451C61E24816800FFE4C3 /* RadioListDeatil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioListDeatil.swift; sourceTree = "<group>"; };
 		18A451C81E24826200FFE4C3 /* RadioDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioDetailData.swift; sourceTree = "<group>"; };
+		18AD4C501E35E8C3003F73B3 /* MiaoShowRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiaoShowRequest.swift; sourceTree = "<group>"; };
+		18AD4C521E35F451003F73B3 /* MiaoShowHotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiaoShowHotTableViewCell.swift; sourceTree = "<group>"; };
 		18B03B421E1C8B0B00BACA9B /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		18B03B461E1C8E9600BACA9B /* MineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 		18B03B481E1C911300BACA9B /* Events_Comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Events_Comment.png; sourceTree = "<group>"; };
@@ -362,7 +406,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186F037E1E456F45000B8760 /* VideoToolbox.framework in Frameworks */,
+				186F037C1E456F39000B8760 /* UIKit.framework in Frameworks */,
+				186F037A1E456F2E000B8760 /* QuartzCore.framework in Frameworks */,
+				186F03781E456F25000B8760 /* OpenGLES.framework in Frameworks */,
+				186F03761E456F1B000B8760 /* MobileCoreServices.framework in Frameworks */,
+				186F03741E456F11000B8760 /* MediaPlayer.framework in Frameworks */,
+				186F03721E456EFF000B8760 /* libz.tbd in Frameworks */,
+				186F03701E456EF7000B8760 /* libbz2.tbd in Frameworks */,
+				186F036E1E456EEB000B8760 /* CoreVideo.framework in Frameworks */,
+				186F036C1E456EE3000B8760 /* CoreMedia.framework in Frameworks */,
+				186F036A1E456EDA000B8760 /* CoreGraphics.framework in Frameworks */,
+				186F03681E456ECF000B8760 /* AVFoundation.framework in Frameworks */,
+				186F03661E456EC7000B8760 /* AudioToolbox.framework in Frameworks */,
 				B36C6AC835F8AD9BA256C13D /* Pods_swiftPre.framework in Frameworks */,
+				186F03641E456E95000B8760 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +441,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186F03621E456E1A000B8760 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				186F03631E456E95000B8760 /* IJKMediaFramework.framework */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		18AD4C4D1E35E81F003F73B3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				572151771E1BDAFF00FBBE65 /* SubscribeViewController.swift */,
+				188FF9E41E372DC4008A3B9A /* LivePlayerViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		18AD4C4E1E35E829003F73B3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18AD4C521E35F451003F73B3 /* MiaoShowHotTableViewCell.swift */,
+				186F037F1E456FA1000B8760 /* LivePlayerView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		18AD4C4F1E35E82F003F73B3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18AD4C501E35E8C3003F73B3 /* MiaoShowRequest.swift */,
+				188FF9E01E372506008A3B9A /* VideoLiveInfo.swift */,
+				188FF9E21E3726E0008A3B9A /* LiveListInfo.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		18B03B401E1C7E4100BACA9B /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +726,7 @@
 		572150D91E1BDA4800FBBE65 /* swiftPre */ = {
 			isa = PBXGroup;
 			children = (
+				186F03621E456E1A000B8760 /* vendor */,
 				572150DA1E1BDA4800FBBE65 /* AppDelegate.swift */,
 				5721518B1E1BDB2500FBBE65 /* image */,
 				5721517F1E1BDB1500FBBE65 /* play */,
@@ -711,7 +806,9 @@
 		572151761E1BDAFF00FBBE65 /* subscribe */ = {
 			isa = PBXGroup;
 			children = (
-				572151771E1BDAFF00FBBE65 /* SubscribeViewController.swift */,
+				18AD4C4F1E35E82F003F73B3 /* model */,
+				18AD4C4E1E35E829003F73B3 /* view */,
+				18AD4C4D1E35E81F003F73B3 /* controller */,
 			);
 			path = subscribe;
 			sourceTree = "<group>";
@@ -783,6 +880,8 @@
 		572151931E1BDB2500FBBE65 /* blueSky */ = {
 			isa = PBXGroup;
 			children = (
+				188FF9E61E375112008A3B9A /* talk_close_40x40_@2x.png */,
+				188FF9E71E375112008A3B9A /* talk_close_40x40_@3x.png */,
 				181FDA771E262243006D1C57 /* playerview_progresspoint.png */,
 				18BF068E1E1E13F300646B41 /* NavBar_animation_frame1.png */,
 				18BF068F1E1E13F300646B41 /* NavBar_animation_frame2.png */,
@@ -1016,6 +1115,19 @@
 		D21690065D3F3D3918A5F6E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				186F037D1E456F45000B8760 /* VideoToolbox.framework */,
+				186F037B1E456F39000B8760 /* UIKit.framework */,
+				186F03791E456F2E000B8760 /* QuartzCore.framework */,
+				186F03771E456F25000B8760 /* OpenGLES.framework */,
+				186F03751E456F1B000B8760 /* MobileCoreServices.framework */,
+				186F03731E456F11000B8760 /* MediaPlayer.framework */,
+				186F03711E456EFF000B8760 /* libz.tbd */,
+				186F036F1E456EF7000B8760 /* libbz2.tbd */,
+				186F036D1E456EEB000B8760 /* CoreVideo.framework */,
+				186F036B1E456EE3000B8760 /* CoreMedia.framework */,
+				186F03691E456EDA000B8760 /* CoreGraphics.framework */,
+				186F03671E456ECF000B8760 /* AVFoundation.framework */,
+				186F03651E456EC7000B8760 /* AudioToolbox.framework */,
 				210B57AD0DC8643C72395392 /* Pods_swiftPre.framework */,
 			);
 			name = Frameworks;
@@ -1172,6 +1284,7 @@
 				572152651E1BDB2500FBBE65 /* tabHome@2x.png in Resources */,
 				18BF06951E1E13F300646B41 /* NavBar_animation_frame2.png in Resources */,
 				572152351E1BDB2500FBBE65 /* AppIcon29x29@3x.png in Resources */,
+				188FF9E81E375113008A3B9A /* talk_close_40x40_@2x.png in Resources */,
 				18BF068A1E1DF39A00646B41 /* playerview_btn_next.png in Resources */,
 				5721523A1E1BDB2500FBBE65 /* back_9x16.png in Resources */,
 				572152341E1BDB2500FBBE65 /* AppIcon29x29@2x.png in Resources */,
@@ -1202,6 +1315,7 @@
 				572152491E1BDB2500FBBE65 /* digdownicon_textpage_press@3x.png in Resources */,
 				18BF06991E1E13F300646B41 /* NavBar_animation_frame6.png in Resources */,
 				572152591E1BDB2500FBBE65 /* cell_arrow@2x.png in Resources */,
+				188FF9E91E375113008A3B9A /* talk_close_40x40_@3x.png in Resources */,
 				5721523F1E1BDB2500FBBE65 /* BMPlayer_pause@2x.png in Resources */,
 				572152621E1BDB2500FBBE65 /* LaunchImage@2x.png in Resources */,
 				5721524F1E1BDB2500FBBE65 /* expansiongraph@3x.png in Resources */,
@@ -1284,6 +1398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AD4C511E35E8C3003F73B3 /* MiaoShowRequest.swift in Sources */,
 				572151591E1BDAEF00FBBE65 /* DetailList.swift in Sources */,
 				5721515B1E1BDAEF00FBBE65 /* FunnyDislikeReason.swift in Sources */,
 				18A451C51E24807900FFE4C3 /* SectionDetailsModel.swift in Sources */,
@@ -1296,9 +1411,11 @@
 				5721516B1E1BDAEF00FBBE65 /* MoreCollectionCell.swift in Sources */,
 				572151431E1BDAEF00FBBE65 /* AlbumViewController.swift in Sources */,
 				5721516D1E1BDAEF00FBBE65 /* PageContentView.swift in Sources */,
+				188FF9E31E3726E0008A3B9A /* LiveListInfo.swift in Sources */,
 				572151711E1BDAEF00FBBE65 /* VideoViewController.swift in Sources */,
 				572151631E1BDAEF00FBBE65 /* FunnyUserInfo.swift in Sources */,
 				572151891E1BDB1500FBBE65 /* RutuObject.swift in Sources */,
+				188FF9E51E372DC4008A3B9A /* LivePlayerViewController.swift in Sources */,
 				572151471E1BDAEF00FBBE65 /* AVPlayerModel.swift in Sources */,
 				572151661E1BDAEF00FBBE65 /* ProgramList.swift in Sources */,
 				18B03B571E1C9F9E00BACA9B /* LiveTableViewCell.swift in Sources */,
@@ -1318,9 +1435,11 @@
 				18B03B601E1CC53600BACA9B /* RadioData.swift in Sources */,
 				5721514D1E1BDAEF00FBBE65 /* FindViewController.swift in Sources */,
 				572151541E1BDAEF00FBBE65 /* LiveViewController.swift in Sources */,
+				188FF9E11E372506008A3B9A /* VideoLiveInfo.swift in Sources */,
 				5721516F1E1BDAEF00FBBE65 /* PlayerModel.swift in Sources */,
 				572151621E1BDAEF00FBBE65 /* FunnyUrlList.swift in Sources */,
 				572151441E1BDAEF00FBBE65 /* AnchorLoveCell.swift in Sources */,
+				18AD4C531E35F451003F73B3 /* MiaoShowHotTableViewCell.swift in Sources */,
 				572151671E1BDAEF00FBBE65 /* RecommendInfo.swift in Sources */,
 				5721510E1E1BDAAC00FBBE65 /* MainViewController.swift in Sources */,
 				18B03B621E1CC6C700BACA9B /* RadioInfoModel.swift in Sources */,
@@ -1332,6 +1451,7 @@
 				572151871E1BDB1500FBBE65 /* AnchorList.swift in Sources */,
 				572151561E1BDAEF00FBBE65 /* AlbumInfo.swift in Sources */,
 				572150DB1E1BDA4800FBBE65 /* AppDelegate.swift in Sources */,
+				186F03801E456FA1000B8760 /* LivePlayerView.swift in Sources */,
 				572152701E1BDB3900FBBE65 /* HttpResquest.swift in Sources */,
 				5721515C1E1BDAEF00FBBE65 /* FunnyGifVideo.swift in Sources */,
 				572151721E1BDAEF00FBBE65 /* VTVideoPlayer.swift in Sources */,
@@ -1508,6 +1628,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HXE3P8QJU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftPre",
+				);
 				INFOPLIST_FILE = swiftPre/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1523,6 +1647,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HXE3P8QJU3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftPre",
+				);
 				INFOPLIST_FILE = swiftPre/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

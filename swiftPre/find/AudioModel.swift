@@ -40,6 +40,7 @@ class AudioModel: NSObject ,STKAudioPlayerDelegate{
     
     //播放音频
     fileprivate func playAudio(urlString:String?) {
+        
         if self.radioPlayer?.moviePlayer.playbackState == MPMoviePlaybackState.playing {
             self.radioPlayer?.moviePlayer.pause()
         }
@@ -51,6 +52,8 @@ class AudioModel: NSObject ,STKAudioPlayerDelegate{
             print("播放失败")
         }
         audioPlay.delegate = self
+        
+        self.setLockView()
     }
     
     func resumePlayer() {
@@ -178,4 +181,60 @@ extension AudioModel{
     }
     
 }
+
+
+extension AudioModel{
+    //MARK: 设置锁屏控制界面
+    func setLockView(){
+        DispatchQueue.global().async {
+            var songName:String!
+            if AudioModel.sharedInstanced.currentSongInfo?.name == nil {
+                songName = " "
+            }else{
+                songName = (AudioModel.sharedInstanced.currentSongInfo?.name!)!
+            }
+            var albumName:String!
+            if AudioModel.sharedInstanced.currentSongInfo?.columnName == nil {
+                albumName = " "
+            }else{
+               albumName = (AudioModel.sharedInstanced.currentSongInfo?.columnName!)!
+            }
+            
+            var logoPic:String!
+            if AudioModel.sharedInstanced.currentSongInfo?.logoUrl == nil {
+                logoPic = " "
+            }else{
+                logoPic = (AudioModel.sharedInstanced.currentSongInfo?.logoUrl!)!
+            }
+            
+            let logoUrl = URL.init(string: logoPic)!
+            let dataLogo = NSData.init(contentsOf: logoUrl)
+            guard dataLogo != nil else {
+                return
+            }
+            let image = UIImage.init(data: dataLogo as! Data)
+            guard image != nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+                    // 歌曲名称
+                    MPMediaItemPropertyTitle:songName,
+                    // 演唱者
+                    MPMediaItemPropertyArtist:albumName,
+                    // 锁屏图片
+                    MPMediaItemPropertyArtwork:MPMediaItemArtwork(image: image!),
+                    //
+                    MPNowPlayingInfoPropertyPlaybackRate:1.0,
+                    // 总时长            MPMediaItemPropertyPlaybackDuration:audioPlayer.duration,
+                    // 当前时间        MPNowPlayingInfoPropertyElapsedPlaybackTime:audioPlayer.currentTime
+                ]
+            }
+        }
+        
+    }
+    
+
+}
+
 

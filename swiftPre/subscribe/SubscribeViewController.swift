@@ -7,25 +7,48 @@
 //
 
 import UIKit
+import MJRefresh
+class SubscribeViewController: UIViewController ,MiaoShowRequestDelegate,UITableViewDelegate,UITableViewDataSource{
 
-class SubscribeViewController: UIViewController {
-
+    let miaoShowHotRequest:MiaoShowRequest = MiaoShowRequest()
+    var dataSource:[VideoLiveInfo]?
+    let liveTableView:UITableView = UITableView.init(frame: CGRect.zero, style: .plain)
+    let reduesIndentigier = "MiaoShowHotTableViewCell"
+    var currentIndex = 1
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.purple
         
+        liveTableView.delegate = self
+        liveTableView.dataSource = self
+        liveTableView.separatorStyle = .none
+        liveTableView.register(MiaoShowHotTableViewCell.self, forCellReuseIdentifier: reduesIndentigier)
+        view.addSubview(liveTableView)
+        liveTableView.snp.makeConstraints { (snpMake) in
+            snpMake.left.right.top.bottom.equalTo(self.view)
+        }
         
-        let button = VTButton.init(frame: CGRect.init(x: 100, y: 200, width: 80, height: 20))
-        button.setTimageViewImage(image: UIImage.init(named: "DJRoom_skimNum.png")!)
-        button.setTTitleLabelText(text: "1210人")
-        button.setImageViewFrame(frame: CGRect.init(x: 5, y: 5, width: 20, height: 10))
-        self.view.addSubview(button)
-        
+        liveTableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingTarget: self, refreshingAction: #selector(loadMoreData))
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if self.dataSource == nil {
+            miaoShowHotRequest.getMiaoShowHotList(pageIndex: 1)
+            miaoShowHotRequest.delegate = self;
+        }
+    }
+    
 
+    func loadMoreData() {
+        currentIndex = currentIndex + 1
+        miaoShowHotRequest.getMiaoShowHotList(pageIndex: currentIndex)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,3 +66,80 @@ class SubscribeViewController: UIViewController {
     */
 
 }
+
+extension SubscribeViewController{
+    //MARK: MiaoShowRequestDelegate
+    func getMiaoShowHotListReturnBackFaild(error: Error) {
+        print(error)
+    }
+    
+    func getMiaoShowHotListReturnBack(pageIndex: Int, list: LiveListInfo) {
+        
+        if self.dataSource == nil {
+            self.dataSource = list.list
+            self.liveTableView.reloadData()
+            return
+        }
+        if self.currentIndex == 1 {
+            self.dataSource?.removeAll()
+            self.dataSource = list.list
+            self.liveTableView.reloadData()
+            return
+        }
+        DispatchQueue.global().async {
+            guard list.list != nil else{
+                return
+            }
+            guard (list.list?.count)! > 0 else{
+                return
+            }
+            let  newVideo:VideoLiveInfo = (list.list?.first)!
+            for liveList in self.dataSource! {
+                if liveList.flv == newVideo.flv {
+                    return
+                }
+            }
+            for video in list.list!{
+                self.dataSource?.append(video)
+            }
+            
+            DispatchQueue.main.async {
+                self.liveTableView.reloadData()
+                self.liveTableView.mj_footer.endRefreshing()
+            }
+        }
+        
+    }
+    
+    //MARK: tableview delegate
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:MiaoShowHotTableViewCell = tableView.dequeueReusableCell(withIdentifier: reduesIndentigier, for: indexPath) as! MiaoShowHotTableViewCell
+        cell.selectionStyle = .none
+        cell.loadCellData(info: (dataSource?[indexPath.row])!)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if dataSource == nil {
+            return 0
+        }
+        return (dataSource?.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = LivePlayerViewController()
+        vc.currentIndex = indexPath.row
+        vc.dataSource = dataSource
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85 + ScreenWidth
+    }
+    
+    
+}
+
+
+

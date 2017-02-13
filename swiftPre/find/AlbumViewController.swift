@@ -25,6 +25,7 @@ class AlbumViewController: UIViewController ,UITableViewDataSource,UITableViewDe
     var dataArray:Array<SongInfo> = Array()
     
     var navbarView:UIView = UIView()
+    var titleLabel:UILabel = UILabel()
     
     
     
@@ -123,6 +124,11 @@ class AlbumViewController: UIViewController ,UITableViewDataSource,UITableViewDe
         backButton.imageEdgeInsets = UIEdgeInsets.init(top: 20, left: 5, bottom: 0, right: 0)
         navbarView.addSubview(backButton)
         
+        titleLabel.frame = CGRect.init(x: 64, y: 20, width: ScreenWidth - 64 * 2, height: 44);
+        titleLabel.textColor = UIColor.darkGray
+        titleLabel.font = UIFont.systemFont(ofSize: 15)
+        titleLabel.textAlignment = .center
+        navbarView.addSubview(titleLabel)
         
         
     }
@@ -179,7 +185,7 @@ class AlbumViewController: UIViewController ,UITableViewDataSource,UITableViewDe
                         weakSelf?.smallImageView.sd_setImage(with: URL.init(string: (info?.logoUrl)!))
                         weakSelf?.blurryImageView.sd_setImage(with: URL.init(string: (info?.logoUrl)!))
                     }
-                    weakSelf?.title = info?.columnName
+                    weakSelf?.titleLabel.text = info?.columnName
                 }
             }
         }
